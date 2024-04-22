@@ -1,0 +1,62 @@
+body {
+    background-color: #3D3C5C;
+}
+
+header {
+    width: 98vw;
+    height: 8vh;
+    background-color: #000000;
+    border-radius: 70px;
+    margin: 2px auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: large;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s, width 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 170, 0.3) 0px 6px, rgba(240, 46, 170, 0.2) 0px 9px, rgba(240, 46, 170, 0.1) 0px 12px, rgba(240, 46, 170, 0.05) 0px 15px;
+    line-height: 100%;
+}
+
+svg {
+    fill: black;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto; 
+}
+
+.visualizer {
+  display: grid;  
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.node {
+    bottom: 0;
+    position: absolute;
+}
