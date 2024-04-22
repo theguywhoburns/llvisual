@@ -1,62 +1,70 @@
 body {
-    background-color: #3D3C5C;
+	background-color: #3d3c5c;
 }
 
 header {
-    width: 98vw;
-    height: 8vh;
-    background-color: #000000;
-    border-radius: 70px;
-    margin: 2px auto;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-around;
+	width: 90vw;
+	height: 60px;
+	background-color: #000000;
+	border-radius: 60px;
+	margin: 2px;
+	padding: 15px 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 input {
-    border-radius: 10px;
-    padding: 0 10px;
-    font-size: large;
+	border-radius: 10px;
+	font-size: large;
 }
 
 button {
-    background-color: white;
-    color: black;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 10px;
-    justify-content: center;
-    transition: transform 0.3s, box-shadow 0.3s, width 0.3s;
-    display: flex;
-    align-items: center;
-    height: 100%;
+	background-color: white;
+	color: black;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 10px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 button:hover {
-    transform: translateY(-5px);
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 170, 0.3) 0px 6px, rgba(240, 46, 170, 0.2) 0px 9px, rgba(240, 46, 170, 0.1) 0px 12px, rgba(240, 46, 170, 0.05) 0px 15px;
-    line-height: 100%;
-}
-
-svg {
-    fill: black;
-    width: 24px;
-    height: 24px;
-    display: block;
-    margin: auto; 
+	transform: translateY(-5px);
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 170, 0.3) 0px 6px,
+		rgba(240, 46, 170, 0.2) 0px 9px, rgba(240, 46, 170, 0.1) 0px 12px,
+		rgba(240, 46, 170, 0.05) 0px 15px;
+	line-height: 100%;
 }
 
 .visualizer {
-  display: grid;  
+	display: grid;
+	height: 80vh;
 }
 
 .bottom {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
 }
 
 .node {
-    bottom: 0;
-    position: absolute;
+	bottom: 0;
+	position: absolute;
+}
+
+/* Media queries for small screens */
+@media (max-width: 600px) {
+	header {
+		width: 100vw;
+	}
+
+	button {
+		padding: 5px 10px;
+	}
+
+	.visualizer {
+		height: 100vh;
+	}
 }
